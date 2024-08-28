@@ -1,0 +1,55 @@
+import Image from 'next/image'
+import React from 'react'
+import antiersolutions from "../../assets/images/antier-solutions.png";
+import Link from 'next/link';
+import { LeftArrow, RedirectIcon, RightArrow } from '@/assets/icons/icons';
+
+const Experience = () => {
+    return (
+        <section className="experience">
+            <h2>Experience</h2>
+            <div className="experience_list">
+                <div className="experience_slides">
+                    <button
+                        className="slider-arrow prev-arrow"
+                    >
+                        <LeftArrow />
+                    </button>
+                    <ul>
+                        <li>
+                            <div className="experience_box">
+                                <h3>
+                                    <Image
+                                        src={antiersolutions}
+                                        alt="antier solutions"
+                                    />
+                                    <span>
+                                        Antier Solutions Pvt. Ltd.
+                                    </span>
+                                    <Link
+                                        href=""
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <RedirectIcon />
+                                    </Link>
+                                </h3>
+                                <p>Antier Solutions is a technology and consulting company that specializes in blockchain development, cryptocurrency solutions, and fintech services.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button
+                        className="slider-arrow right-arrow"
+                    >
+                        <RightArrow />
+                    </button>
+                </div>
+                <div className="slider_dots">
+                    <button></button>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Experience
