@@ -2,6 +2,7 @@
 
 body {
     background: var(--body);
+    color: var(--text);
 }
 
 h1,
@@ -30,6 +31,6 @@ a {
 }
 
 .container {
-    max-width: 630px;
+    max-width: 635px;
     padding: 0;
 }

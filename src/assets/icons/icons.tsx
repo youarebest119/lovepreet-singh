@@ -1,14 +1,14 @@
 export const LeftArrow = () => <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.08333 5L1 3M1 3L3.08333 0.999999M1 3L11 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M3.08333 5L1 3M1 3L3.08333 0.999999M1 3L11 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 </svg>
 
 
 export const RightArrow = () => <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8.91667 1L11 3M11 3L8.91667 5M11 3H1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M8.91667 1L11 3M11 3L8.91667 5M11 3H1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 </svg>
 
 export const RedirectIcon = () => <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.5 4H3.25C2.65326 4 2.08097 4.23705 1.65901 4.65901C1.23705 5.08097 1 5.65326 1 6.25V16.75C1 17.3467 1.23705 17.919 1.65901 18.341C2.08097 18.7629 2.65326 19 3.25 19H13.75C14.3467 19 14.919 18.7629 15.341 18.341C15.7629 17.919 16 17.3467 16 16.75V8.5M5.5 14.5L19 1M19 1H13.75M19 1V6.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M11.5 4H3.25C2.65326 4 2.08097 4.23705 1.65901 4.65901C1.23705 5.08097 1 5.65326 1 6.25V16.75C1 17.3467 1.23705 17.919 1.65901 18.341C2.08097 18.7629 2.65326 19 3.25 19H13.75C14.3467 19 14.919 18.7629 15.341 18.341C15.7629 17.919 16 17.3467 16 16.75V8.5M5.5 14.5L19 1M19 1H13.75M19 1V6.25" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 </svg>
 
 

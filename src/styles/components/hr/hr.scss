@@ -1,0 +1,7 @@
+.custom_hr {
+    border: none;
+    background: repeating-linear-gradient(to right, transparent, transparent 5px, var(--text) 5px, var(--text) 10px);
+    height: 1px;
+    width: 100%;
+    margin: 28px auto;
+}

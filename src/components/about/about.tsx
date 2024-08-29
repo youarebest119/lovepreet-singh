@@ -19,7 +19,7 @@ const About = () => {
             <div className="about_content">
                 <h2>About</h2>
                 <p>
-                    I am a professional web developer and designer with <span>2 years of experience</span>, possessing extensive knowledge in web development and design. My skills include creating <span>visually appealing</span> and highly functional websites using the latest technologies and best practices.
+                    I am a professional web developer and designer with <b><span className="underline" />2 years of experience</b>, possessing extensive knowledge in web development and design. My skills include creating <b><span className="underline" />visually appealing</b> and highly functional websites using the latest technologies and best practices.
                 </p>
             </div>
         </section>

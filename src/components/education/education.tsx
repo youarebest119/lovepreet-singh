@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import pup from "../../assets/images/pup.jpg";
 import React from 'react'
 
 const Education = () => {
@@ -10,7 +11,7 @@ const Education = () => {
                     <li>
                         <div className="education_item">
                             <Image
-                                src=""
+                                src={pup}
                                 alt="punjabi university, patiala"
                             />
                             <div className="education_item_detail">

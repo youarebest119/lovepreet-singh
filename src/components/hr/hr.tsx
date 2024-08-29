@@ -2,9 +2,7 @@ import React from 'react'
 
 const Hr = () => {
     return (
-        <div>
-
-        </div>
+        <hr className="custom_hr" />
     )
 }
 
