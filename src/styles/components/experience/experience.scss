@@ -1,0 +1,135 @@
+.experience {
+    h2 {
+        text-align: center;
+    }
+
+    .experience_list {
+        margin-top: 12px;
+
+        .experience_slides {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .slider_arrow {
+                width: 24px;
+                height: 24px;
+                display: inline-flex;
+                align-items: center;
+                flex-shrink: 0;
+                justify-content: center;
+                text-align: center;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+
+                &:not(.disabled) {
+                    background-color: var(--base);
+                    transition: 200ms ease-in-out;
+
+                    &:hover {
+                        background-color: var(--secondary);
+                    }
+
+                    &:active {
+                        transform: scale(0.90);
+                    }
+                }
+
+                &.disabled {
+                    background-color: var(--disable);
+                    cursor: default;
+                }
+            }
+
+            ul {
+                max-width: 500px;
+                width: 100%;
+                margin-inline: 16px;
+
+                li {
+                    .experience_box {
+                        background-color: var(--box);
+                        padding: 16px;
+                        border-radius: 8px;
+
+                        h3 {
+                            font-size: 18px;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+
+                            >img {
+                                width: 44px;
+                                height: 44px;
+                                flex-shrink: 0;
+                                margin-right: 18px;
+                                background-color: var(--container);
+                                border-radius: 8px;
+                            }
+
+                            span {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                padding-right: 20px;
+                            }
+
+                            a {
+                                margin-left: auto;
+                                display: inline-flex;
+                                flex-shrink: 0;
+
+                                svg {
+                                    width: 14px;
+                                    height: 14px;
+
+                                    path {
+                                        transition: 300ms ease-in-out;
+                                    }
+                                }
+
+                                &:hover {
+                                    svg {
+                                        path {
+                                            stroke: var(--base);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: var(--light-text);
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider_bullets {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 44px;
+                background-color: var(--disable);
+
+                &:not(:last-child) {
+                    margin-right: 4px;
+                }
+
+                &.active {
+                    width: 28px;
+                    background-color: var(--base);
+                }
+            }
+        }
+    }
+}

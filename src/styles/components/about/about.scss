@@ -27,13 +27,6 @@
         }
     }
 
-    .vr {
-        margin: 4px 16px;
-        width: 1px;
-        height: 48px;
-        background: repeating-linear-gradient(to bottom, transparent, transparent 5px, var(--text) 5px, var(--text) 10px);
-    }
-
     .about_content {
         p {
             font-size: 14px;
@@ -53,6 +46,8 @@
                     height: 1px;
                     background-color: var(--text);
                     bottom: -2px;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
             }
         }

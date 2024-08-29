@@ -11,7 +11,7 @@ const Experience = () => {
             <div className="experience_list">
                 <div className="experience_slides">
                     <button
-                        className="slider-arrow prev-arrow"
+                        className="slider_arrow prev_arrow disabled"
                     >
                         <LeftArrow />
                     </button>
@@ -39,12 +39,13 @@ const Experience = () => {
                         </li>
                     </ul>
                     <button
-                        className="slider-arrow right-arrow"
+                        className="slider_arrow right_arrow"
                     >
                         <RightArrow />
                     </button>
                 </div>
-                <div className="slider_dots">
+                <div className="slider_bullets">
+                    <button className="active"></button>
                     <button></button>
                 </div>
             </div>

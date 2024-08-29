@@ -1,0 +1,9 @@
+.custom_vr {
+    margin: 4px 16px;
+
+    span {
+        width: 1px;
+        height: 48px;
+        background: repeating-linear-gradient(to bottom, transparent, transparent 5px, var(--border) 5px, var(--border) 10px);
+    }
+}

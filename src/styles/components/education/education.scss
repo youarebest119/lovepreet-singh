@@ -1,0 +1,59 @@
+.education {
+    .education_in {
+        padding: 18px 18px 24px;
+        border-radius: 8px;
+        background-color: var(--box);
+
+        h2 {
+            text-align: center;
+        }
+
+        .education_list {
+            margin-top: 24px;
+
+            ul {
+                li {
+                    .education_item {
+                        display: flex;
+                        align-items: center;
+
+                        >img {
+                            width: 44px;
+                            height: 44px;
+                            flex-direction: 0;
+                            margin-right: 12px;
+                            border-radius: 50%;
+                            background-color: var(--disable);
+                        }
+
+                        .education_item_detail {
+                            h3 {
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                color: var(--light-text);
+                                font-size: 14px;
+                                margin-top: 4px;
+                            }
+                        }
+
+                        .education_item_dates {
+                            text-align: right;
+                            margin-left: auto;
+                            padding-left: 8px;
+
+                            p {
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: var(--light-text);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

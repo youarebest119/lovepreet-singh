@@ -34,3 +34,18 @@ a {
     max-width: 635px;
     padding: 0;
 }
+
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+img,
+canvas,
+iframe,
+svg,
+video {
+    max-width: 100%;
+}

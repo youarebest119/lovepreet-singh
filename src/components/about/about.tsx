@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import profilePicture from "../../assets/images/profile.png";
+import Vr from '../vr/vr';
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
                     <p>Professional web developer and designer with 2 years of experience and extensive knowledge in web development and design. </p>
                 </div>
             </div>
-            <span className="vr" />
+            <Vr />
             <div className="about_content">
                 <h2>About</h2>
                 <p>
