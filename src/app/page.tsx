@@ -9,6 +9,7 @@ import "./home.scss";
 import Hr from "@/components/hr/hr";
 
 export default function Home() {
+    
     return (
         <main className="home">
             <Container>
