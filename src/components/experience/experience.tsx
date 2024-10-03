@@ -10,11 +10,11 @@ const Experience = () => {
             <h2>Experience</h2>
             <div className="experience_list">
                 <div className="experience_slides">
-                    <button
+                    {/* <button
                         className="slider_arrow prev_arrow disabled"
                     >
                         <LeftArrow />
-                    </button>
+                    </button> */}
                     <ul>
                         <li>
                             <div className="experience_box">
@@ -27,8 +27,9 @@ const Experience = () => {
                                         Antier Solutions Pvt. Ltd.
                                     </span>
                                     <Link
-                                        href=""
+                                        href="https://www.antiersolutions.com/"
                                         target="_blank"
+                                        aria-label={`open the official website for antier solutions`}
                                         rel="noreferrer"
                                     >
                                         <RedirectIcon />
@@ -38,16 +39,16 @@ const Experience = () => {
                             </div>
                         </li>
                     </ul>
-                    <button
+                    {/* <button
                         className="slider_arrow right_arrow"
                     >
                         <RightArrow />
-                    </button>
+                    </button> */}
                 </div>
-                <div className="slider_bullets">
+                {/* <div className="slider_bullets">
                     <button className="active"></button>
                     <button></button>
-                </div>
+                </div> */}
             </div>
         </section>
     )

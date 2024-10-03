@@ -9,5 +9,15 @@
             font-weight: 600;
             margin-bottom: 4px;
         }
+
+        .custom_badge {
+            background-color: var(--text);
+            color: var(--box);
+            width: fit-content;
+            height: auto;
+            font-size: 14px;
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
     }
 }

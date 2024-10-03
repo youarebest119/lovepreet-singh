@@ -1,0 +1,1 @@
+export const TOTAL_EXPERIENCE = Math.abs(2022 - new Date().getFullYear());

@@ -1,0 +1,89 @@
+.custom_spinner {
+    --size: 48px;
+    --color: var(--base);
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+
+    >div {
+        width: 5%;
+        height: 15%;
+        position: absolute;
+        left: 49%;
+        top: 43%;
+        opacity: 0;
+        border-radius: 50px;
+        background-color: var(--color);
+        animation: spinner-loader var(--animate-speed, 1s) linear infinite; // Set default speed to 1s
+    }
+
+    @keyframes spinner-loader {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.25;
+        }
+    }
+
+    .bar1 {
+        transform: rotate(0deg) translate(0, -130%);
+        animation-delay: 0s;
+    }
+
+    .bar2 {
+        transform: rotate(30deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.9167);
+    }
+
+    .bar3 {
+        transform: rotate(60deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.833);
+    }
+
+    .bar4 {
+        transform: rotate(90deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.7497);
+    }
+
+    .bar5 {
+        transform: rotate(120deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.667);
+    }
+
+    .bar6 {
+        transform: rotate(150deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.5837);
+    }
+
+    .bar7 {
+        transform: rotate(180deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.5);
+    }
+
+    .bar8 {
+        transform: rotate(210deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.4167);
+    }
+
+    .bar9 {
+        transform: rotate(240deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.333);
+    }
+
+    .bar10 {
+        transform: rotate(270deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.2497);
+    }
+
+    .bar11 {
+        transform: rotate(300deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.167);
+    }
+
+    .bar12 {
+        transform: rotate(330deg) translate(0, -130%);
+        animation-delay: calc(var(--animate-speed, 1s) * -0.0833);
+    }
+}

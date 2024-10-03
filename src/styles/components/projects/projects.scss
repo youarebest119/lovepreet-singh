@@ -1,0 +1,96 @@
+.projects {
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 22px;
+
+        li {
+
+            .project_box {
+                padding: 16px 24px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 0;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-left: 1px dashed var(--border);
+                }
+
+                >img {
+                    width: 34px;
+                    height: 34px;
+                    border: 1px solid var(--border);
+                    border-radius: 50%;
+                    background-color: var(--box);
+                    padding: 2px;
+                    object-fit: contain;
+                    position: absolute;
+                    left: 0;
+                    transform: translateX(-50%);
+                }
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    line-height: 34px;
+
+                    a {
+                        color: inherit;
+                        margin-left: auto;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                    color: var(--light-text);
+                    font-size: 14px;
+                    margin-top: 4px;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+            &:not(:first-child) {
+                .project_box {
+                    border-top: 1px dashed var(--border);
+                }
+            }
+
+            &:first-child {
+                .project_box {
+                    &::before {
+                        height: calc(100% - 34px);
+                        top: 34px;
+                    }
+                }
+            }
+
+            &:last-child {
+                .project_box {
+                    padding-bottom: 0;
+
+                    &::before {
+                        height: 16px;
+                    }
+                }
+            }
+
+        }
+    }
+}

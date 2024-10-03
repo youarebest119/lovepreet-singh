@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import pup from "../../assets/images/pup.jpg";
+import pup from "../../assets/images/pup.png";
+import jnv from "../../assets/images/jnv.png";
 import React from 'react'
 import Vr from '../vr/vr';
 
@@ -13,19 +14,19 @@ const Education = () => {
                         <li>
                             <div className="education_item">
                                 <Image
-                                    src={pup}
-                                    alt="punjabi university, patiala"
+                                    src={jnv}
+                                    alt="jawahar navodaya vidyalaya, sri muktsar sahib"
                                 />
                                 <div className="education_item_detail">
-                                    <h3>Punjabi University, Patiala</h3>
-                                    <p>Bachelor’s Degree of Computer Science (BCA)</p>
+                                    <h3>JNV, Muktsar</h3>
+                                    <p>Higher Secondary School</p>
                                 </div>
                                 <div className="education_item_dates">
-                                    <p>January 2021 - April 2024</p>
+                                    <p>January 2021 - April 2022</p>
                                 </div>
                             </div>
+                            <Vr />
                         </li>
-                        <Vr />
                         <li>
                             <div className="education_item">
                                 <Image
@@ -37,7 +38,7 @@ const Education = () => {
                                     <p>Bachelor’s Degree of Computer Science (BCA)</p>
                                 </div>
                                 <div className="education_item_dates">
-                                    <p>January 2021 - April 2024</p>
+                                    <p>July 2022</p>
                                 </div>
                             </div>
                         </li>
