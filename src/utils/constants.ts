@@ -6,4 +6,5 @@ export const SOCIAL_MEDIA = {
     INSTAGRAM: "https://www.instagram.com/lovepreetsingh88975/",
     PHONE: "+91 85570 21323",
     MAIL: "lovepreetboouk@gmail.com",
+    NPM: "https://www.npmjs.com/~ui-flare",
 }
