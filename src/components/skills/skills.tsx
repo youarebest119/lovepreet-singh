@@ -1,33 +1,71 @@
-import React from 'react'
-import ts from "../../assets/images/ts.png";
-import js from "../../assets/images/js.png";
-import html5 from "../../assets/images/html5.png";
-import css3 from "../../assets/images/css3.png";
-import react from "../../assets/images/react-js.png";
 import Image from 'next/image';
 import Link from 'next/link';
+import Vr from '../vr/vr';
 
 const Skills = () => {
     const skills = [
         {
-            icon: html5,
-            name: "HTML5",
+            title: "Frontend Development",
+            children: [
+                {
+                    name: "HTML5",
+                    progress: 8.8,
+                },
+                {
+                    name: "CSS3",
+                    progress: 8.8,
+                },
+                {
+                    name: "Javascript",
+                    progress: 8,
+                },
+                {
+                    name: "Typescript",
+                    progress: 7,
+                },
+            ]
         },
         {
-            icon: css3,
-            name: "CSS3",
+            title: "Frameworks & Libraries",
+            children: [
+                {
+                    name: "React (JavaScript/TypeScript)",
+                    progress: 8.5,
+                },
+                {
+                    name: "Next.js (JavaScript/TypeScript)",
+                    progress: 8,
+                },
+                {
+                    name: "Redux Toolkit",
+                    progress: 9,
+                },
+                {
+                    name: "React Bootstrap",
+                    progress: 9,
+                },
+                {
+                    name: "Three Js",
+                    progress: 2.5,
+                },
+            ]
         },
         {
-            icon: js,
-            name: "Javascript",
-        },
-        {
-            icon: ts,
-            name: "Typescript",
-        },
-        {
-            icon: react,
-            name: "React Js",
+            title: "UI/UX Design",
+            children: [
+                {
+                    name: "CSS Animations",
+                    progress: 8,
+                },
+                {
+                    name: "Framer Motion",
+                    progress: 7.5,
+                },
+                {
+                    name: "GSAP animations",
+                    progress: 8.3,
+                },
+            ]
         },
     ]
     return (
@@ -38,17 +76,27 @@ const Skills = () => {
                     {
                         skills.map(item => {
                             return (
-                                <li key={item.name}>
-                                    <Link
-                                        href=""
-                                        target='_blank'
-                                        rel="noreferrer"
-                                    >
-                                        <Image
-                                            src={item.icon}
-                                            alt={item.name}
-                                        />
-                                    </Link>
+                                <li key={item.title}>
+                                    <h3>{item.title}</h3>
+                                    <div>
+                                        <Vr />
+                                        <ul>
+                                            {
+                                                item.children.map(item => {
+                                                    return (
+                                                        <li key={item.name}>
+                                                            <div className="skill_box">
+                                                                <h4>{item.name} <span>{item.progress * 10}%</span></h4>
+                                                                <div className="skill_box_progress">
+                                                                    <div className="skill_box_progress_done" style={{ width: `${item.progress * 10}%` }}></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
                                 </li>
                             )
                         })

@@ -1,14 +1,10 @@
-import { RedirectIcon } from '@/assets/icons/icons'
-import { data } from '@/utils/projects-data'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+// import { data } from '@/utils/projects-data'
 
 const Projects = () => {
     return (
         <div className="projects">
             <h2>Projects</h2>
-            <ul>
+            {/* <ul>
                 {
                     data.map((item) => {
                         return (
@@ -32,7 +28,7 @@ const Projects = () => {
                         )
                     })
                 }
-            </ul>
+            </ul> */}
         </div>
     )
 }
