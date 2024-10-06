@@ -13,9 +13,21 @@
 
             ul {
                 li {
+                    @media (max-width: 419px) {
+                        .custom_vr {
+                            span {
+                                height: 28px;
+                            }
+                        }
+                    }
+
                     .education_item {
                         display: flex;
                         align-items: center;
+
+                        @media (max-width: 419px) {
+                            flex-wrap: wrap;
+                        }
 
                         >img {
                             width: 44px;
@@ -24,12 +36,22 @@
                             margin-right: 12px;
                             border-radius: 50%;
                             background-color: var(--disable);
+
+                            @media (max-width: 575px) {
+                                width: 34px;
+                                height: 34px;
+                                margin-right: 10px;
+                            }
                         }
 
                         .education_item_detail {
                             h3 {
                                 font-size: 16px;
                                 font-weight: 600;
+
+                                @media (max-width: 419px) {
+                                    font-size: 14px;
+                                }
                             }
 
                             p {
@@ -37,6 +59,10 @@
                                 color: var(--light-text);
                                 font-size: 14px;
                                 margin-top: 4px;
+
+                                @media (max-width: 419px) {
+                                    font-size: 13px;
+                                }
                             }
                         }
 
@@ -45,10 +71,19 @@
                             margin-left: auto;
                             padding-left: 8px;
 
+                            @media (max-width: 419px) {
+                                margin-left: 0;
+                                padding: 4px 0 0 44px;
+                            }
+
                             p {
                                 font-size: 12px;
                                 font-weight: 500;
                                 color: var(--light-text);
+
+                                @media (max-width: 419px) {
+                                    font-weight: 700;
+                                }
                             }
                         }
                     }

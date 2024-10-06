@@ -12,6 +12,13 @@
     border: 2px solid var(--base);
     transition: 300ms ease-in-out;
 
+    @media (max-width: 575px) {
+        height: 38px;
+        font-size: 14px;
+        line-height: 1.2;
+        border-radius: 12px;
+    }
+
     &:enabled {
         &:hover {
             color: var(--base);

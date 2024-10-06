@@ -4,4 +4,8 @@
     height: 1px;
     width: 100%;
     margin: 28px auto;
+
+    @media (max-width: 575px) {
+        margin: 14px auto;
+    }
 }

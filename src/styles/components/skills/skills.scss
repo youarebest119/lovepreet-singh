@@ -38,12 +38,20 @@
                             padding: 16px;
                             width: 50%;
 
+                            @media (max-width: 419px) {
+                                width: 100%;
+                            }
+
                             .skill_box {
                                 h4 {
                                     font-size: 14px;
                                     display: flex;
                                     align-items: center;
                                     margin-bottom: 4px;
+
+                                    @media (max-width: 575px) {
+                                        font-size: 12px;
+                                    }
 
                                     span {
                                         font-size: 12px;
