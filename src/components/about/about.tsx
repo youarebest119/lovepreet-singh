@@ -2,10 +2,32 @@ import { TOTAL_EXPERIENCE } from '@/utils/constants';
 import Image from 'next/image';
 import profilePicture from "../../assets/images/me-hd.png";
 import Vr from '../vr/vr';
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
+import gsap from 'gsap';
 
 const About = () => {
+    const ref = useRef(null);
+    useGSAP(() => {
+        gsap.from(".about_banner > img", {
+            scale: 0,
+            ease: "back",
+        })
+        gsap.from(".about_banner_content > *", {
+            yPercent: 100,
+            opacity: 0,
+            ease: "back",
+            stagger: 0.05,
+        })
+        gsap.from(".about_content h2, .about_content p", {
+            yPercent: 100,
+            opacity: 0,
+            ease: "back",
+            stagger: 0.05,
+        })
+    }, { scope: ref })
     return (
-        <section className="about">
+        <section ref={ref} className="about">
             <div className="about_banner">
                 <Image
                     src={profilePicture}

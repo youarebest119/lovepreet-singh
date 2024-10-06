@@ -1,5 +1,11 @@
 @import "../assets/theme/_var.scss";
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: var(--body);
     color: var(--text);
@@ -31,11 +37,13 @@ a {
 }
 
 .container {
+    margin: 0 auto;
     max-width: 635px;
     padding: 0;
 }
 
 button {
+    font-family: inherit;
     border: none;
     outline: none;
     padding: 0;

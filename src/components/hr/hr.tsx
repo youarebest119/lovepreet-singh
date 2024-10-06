@@ -1,8 +1,20 @@
-import React from 'react'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import React, { useRef } from 'react'
 
 const Hr = () => {
+    const ref = useRef(null);
+    useGSAP(() => {
+        gsap.fromTo(".custom_hr", {
+            width: 0,
+            ease: "back",
+        }, {
+            width: "100%",
+            scrollTrigger: ".custom_hr",
+        })
+    }, {})
     return (
-        <hr className="custom_hr" />
+        <hr ref={ref} className="custom_hr" />
     )
 }
 

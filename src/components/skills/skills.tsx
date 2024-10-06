@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Vr from '../vr/vr';
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
     const skills = [
@@ -68,8 +74,19 @@ const Skills = () => {
             ]
         },
     ]
+    const ref = useRef(null);
+    useGSAP(() => {
+        gsap.from(".skill_box_progress_done", {
+            width: 0,
+            ease: "back",
+            stagger: 0.01,
+            scrollTrigger: {
+                trigger: ".skill_box_progress_done",
+            }
+        })
+    }, { scope: ref })
     return (
-        <section className="skills">
+        <section ref={ref} className="skills">
             <h2>Skills</h2>
             <div className="skills_list">
                 <ul>
