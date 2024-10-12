@@ -1,10 +1,8 @@
 import { Github, Instagram, MailIcon, NPMIcon, PhoneIcon } from '@/assets/icons/icons'
 import { SOCIAL_MEDIA } from '@/utils/constants'
 import Link from 'next/link'
-import Hr from '../hr/hr'
-import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
-import gsap from 'gsap'
+import Hr from '../hr/hr'
 
 const SocialMedia = () => {
     const socialmedia = [
@@ -35,17 +33,9 @@ const SocialMedia = () => {
         }
     ]
     const ref = useRef(null);
-    useGSAP(() => {
-        gsap.from(".social-media li", {
-            yPercent: -100,
-            opacity: 0,
-            ease: "back",
-            stagger: 0.05,
-        })
-    }, { scope: ref })
     return (
         <section ref={ref} className="social-media">
-            <ul>
+            <ul data-animate>
                 <li>
                     <h3>Lovepreet Singh</h3>
                 </li>

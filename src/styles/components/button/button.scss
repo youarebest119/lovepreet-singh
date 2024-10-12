@@ -20,6 +20,8 @@
     }
 
     &:enabled {
+        cursor: pointer;
+
         &:hover {
             color: var(--base);
             background-color: transparent;

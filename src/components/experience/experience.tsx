@@ -7,9 +7,9 @@ import { LeftArrow, RedirectIcon, RightArrow } from '@/assets/icons/icons';
 const Experience = () => {
     return (
         <section className="experience">
-            <h2>Experience</h2>
+            <h2 data-animate>Experience</h2>
             <div className="experience_list">
-                <div className="experience_slides">
+                <div data-animate className="experience_slides">
                     {/* <button
                         className="slider_arrow prev_arrow disabled"
                     >

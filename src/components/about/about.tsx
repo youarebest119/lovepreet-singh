@@ -1,34 +1,14 @@
 import { TOTAL_EXPERIENCE } from '@/utils/constants';
 import Image from 'next/image';
+import { useRef } from 'react';
 import profilePicture from "../../assets/images/me-hd.png";
 import Vr from '../vr/vr';
-import { useGSAP } from '@gsap/react';
-import { useRef } from 'react';
-import gsap from 'gsap';
 
 const About = () => {
     const ref = useRef(null);
-    useGSAP(() => {
-        gsap.from(".about_banner > img", {
-            scale: 0,
-            ease: "back",
-        })
-        gsap.from(".about_banner_content > *", {
-            yPercent: 100,
-            opacity: 0,
-            ease: "back",
-            stagger: 0.05,
-        })
-        gsap.from(".about_content h2, .about_content p", {
-            yPercent: 100,
-            opacity: 0,
-            ease: "back",
-            stagger: 0.05,
-        })
-    }, { scope: ref })
     return (
         <section ref={ref} className="about">
-            <div className="about_banner">
+            <div className="about_banner" data-animate>
                 <Image
                     src={profilePicture}
                     alt="lovepreet singh"
@@ -38,17 +18,21 @@ const About = () => {
                     <p>Professional web developer and designer with {TOTAL_EXPERIENCE} years of experience and extensive knowledge in web development and design. </p>
                 </div>
             </div>
-            <Vr />
+            <div data-animate>
+                <Vr />
+            </div>
             <div className="about_content">
-                <h2>About 🙂‍↕️</h2>
-                <p>
+                <h2 data-animate>About 🙂‍↕️</h2>
+                <p data-animate>
                     I am a professional web developer and designer with <b><span className="underline" />2 years of experience</b>, possessing extensive knowledge in web development and design. My skills include creating <b><span className="underline" />visually appealing</b> and highly functional websites using the latest technologies and best practices.
                 </p>
             </div>
-            <Vr />
+            <div data-animate>
+                <Vr />
+            </div>
             <div className="about_content">
-                <h2>Hobbies 🙂</h2>
-                <p>
+                <h2 data-animate>Hobbies 🙂</h2>
+                <p data-animate>
                     My hobbies includes walking, playing games, network surfing and listening to music.
                 </p>
             </div>

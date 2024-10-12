@@ -7,21 +7,31 @@ import Hr from "@/components/hr/hr";
 import Skills from "@/components/skills/skills";
 import SocialMedia from "@/components/social-media/social-media";
 import "./home.scss";
+import useAnimate from "@/utils/useAnimate";
 
 export default function Home() {
+    useAnimate();
     return (
         <main className="home">
             <div className="container">
                 <div className="home_in">
                     <SocialMedia />
                     <About />
-                    <Hr />
+                    <div data-animate>
+                        <Hr />
+                    </div>
                     <Experience />
-                    <Hr />
+                    <div data-animate>
+                        <Hr />
+                    </div>
                     <Education />
-                    <Hr />
+                    <div data-animate>
+                        <Hr />
+                    </div>
                     <Skills />
-                    <Hr />
+                    <div data-animate>
+                        <Hr />
+                    </div>
                     <Contact />
                 </div>
             </div>

@@ -8,10 +8,10 @@ const Education = () => {
     return (
         <section className="education">
             <div className="education_in">
-                <h2>Education</h2>
+                <h2 data-animate>Education</h2>
                 <div className="education_list">
                     <ul>
-                        <li>
+                        <li data-animate>
                             <div className="education_item">
                                 <Image
                                     src={jnv}
@@ -27,7 +27,7 @@ const Education = () => {
                             </div>
                             <Vr />
                         </li>
-                        <li>
+                        <li data-animate>
                             <div className="education_item">
                                 <Image
                                     src={pup}

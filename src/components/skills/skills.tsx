@@ -1,10 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Vr from '../vr/vr';
-import { useGSAP } from '@gsap/react';
-import { useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { useRef } from 'react';
+import Vr from '../vr/vr';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,36 +72,28 @@ const Skills = () => {
         },
     ]
     const ref = useRef(null);
-    useGSAP(() => {
-        gsap.from(".skill_box_progress_done", {
-            width: 0,
-            ease: "back",
-            stagger: 0.01,
-            scrollTrigger: {
-                trigger: ".skill_box_progress_done",
-            }
-        })
-    }, { scope: ref })
     return (
         <section ref={ref} className="skills">
-            <h2>Skills</h2>
+            <h2 data-animate>Skills</h2>
             <div className="skills_list">
                 <ul>
                     {
                         skills.map(item => {
                             return (
                                 <li key={item.title}>
-                                    <h3>{item.title}</h3>
+                                    <h3 data-animate>{item.title}</h3>
                                     <div>
-                                        <Vr />
+                                        <div data-animate>
+                                            <Vr />
+                                        </div>
                                         <ul>
                                             {
                                                 item.children.map(item => {
                                                     return (
                                                         <li key={item.name}>
                                                             <div className="skill_box">
-                                                                <h4>{item.name} <span>{item.progress * 10}%</span></h4>
-                                                                <div className="skill_box_progress">
+                                                                <h4 data-animate>{item.name} <span>{item.progress * 10}%</span></h4>
+                                                                <div data-animate className="skill_box_progress">
                                                                     <div className="skill_box_progress_done" style={{ width: `${item.progress * 10}%` }}></div>
                                                                 </div>
                                                             </div>
