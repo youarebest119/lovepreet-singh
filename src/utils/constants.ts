@@ -7,4 +7,5 @@ export const SOCIAL_MEDIA = {
     PHONE: "+91 85570 21323",
     MAIL: "lovepreetboouk@gmail.com",
     NPM: "https://www.npmjs.com/~ui-flare",
+    RESUME: "/lovepreet.docx",
 }

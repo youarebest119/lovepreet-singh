@@ -1,4 +1,4 @@
-import { Github, Instagram, MailIcon, NPMIcon, PhoneIcon } from '@/assets/icons/icons'
+import { DocIcon, Github, Instagram, MailIcon, NPMIcon, PhoneIcon } from '@/assets/icons/icons'
 import { SOCIAL_MEDIA } from '@/utils/constants'
 import Link from 'next/link'
 import { useRef } from 'react'
@@ -50,6 +50,11 @@ const SocialMedia = () => {
                         )
                     })
                 }
+                <li>
+                    <Link aria-label="resume" href={SOCIAL_MEDIA.RESUME} target="_blank" rel="noreferrer" download={"lovepreet-resume"}>
+                        <DocIcon />
+                    </Link>
+                </li>
             </ul>
             <Hr />
         </section>
