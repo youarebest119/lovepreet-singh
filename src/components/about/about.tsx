@@ -1,7 +1,7 @@
 import { TOTAL_EXPERIENCE } from '@/utils/constants';
 import Image from 'next/image';
 import { useRef } from 'react';
-import profilePicture from "../../assets/images/me-hd.png";
+import profilePicture from "../../assets/images/me-hd.webp";
 import Vr from '../vr/vr';
 
 const About = () => {
@@ -12,6 +12,9 @@ const About = () => {
                 <Image
                     src={profilePicture}
                     alt="lovepreet singh"
+                    width={92}
+                    height={92}
+                    priority
                 />
                 <div className="about_banner_content">
                     <h1>Hi, I’m Lovepreet 👋</h1>
