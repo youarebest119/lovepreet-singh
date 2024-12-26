@@ -11,11 +11,11 @@ const SocialMedia = () => {
             name: "github",
             icon: <Github />,
         },
-        {
-            url: SOCIAL_MEDIA.INSTAGRAM,
-            name: "instagram",
-            icon: <Instagram />,
-        },
+        // {
+        //     url: SOCIAL_MEDIA.INSTAGRAM,
+        //     name: "instagram",
+        //     icon: <Instagram />,
+        // },
         {
             url: `mailto:${SOCIAL_MEDIA.MAIL}`,
             name: "mail",
@@ -52,6 +52,11 @@ const SocialMedia = () => {
                 }
                 <li>
                     <Link aria-label="resume" href={SOCIAL_MEDIA.RESUME} target="_blank" rel="noreferrer" download={"lovepreet-resume"}>
+                        <DocIcon />
+                    </Link>
+                </li>
+                <li>
+                    <Link aria-label="resume-pdf-form" title="PDF Form Resume" href={SOCIAL_MEDIA.RESUME_PDF} target="_blank" rel="noreferrer" download={"lovepreet-resume"}>
                         <DocIcon />
                     </Link>
                 </li>

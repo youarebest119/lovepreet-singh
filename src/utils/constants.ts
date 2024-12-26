@@ -8,4 +8,5 @@ export const SOCIAL_MEDIA = {
     MAIL: "lovepreetboouk@gmail.com",
     NPM: "https://www.npmjs.com/~ui-flare",
     RESUME: "/lovepreet.docx",
+    RESUME_PDF: "/lovepreet.pdf",
 }
